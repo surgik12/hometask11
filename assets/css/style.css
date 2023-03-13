@@ -46,7 +46,7 @@
 }
 
 .cards > img{
-    width: 200px;
+    width: auto;
     height: 300px;
 }
 
@@ -196,22 +196,16 @@ nav > img{
 
 .griid{
     display: grid;
-    margin: 0;
-    padding: 0;
+    margin: auto;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 40px;
+    gap: 30px;
 }
 
 
 /* конец основной части */
 
 /*footer*/
-
-#border{
-    padding-left: 22vw;
-    padding-right: 22vw;
-}
 
 #border > div{
     padding-top: 25px;
@@ -220,17 +214,56 @@ nav > img{
     margin-bottom: 2px;
 }
 
-h3 > p{
+#border > div > p{
     font-size: medium;
     color: gray;
-    padding-top: 5px;
     margin: 0;
+    text-align: center;
 }
 
 h3{
     text-align: center;
-    border-left: 1px solid rgb(179, 179, 179);
-    border-right: 1px solid rgb(179, 179, 179);
+    margin: 0;
+}
+
+.footr{
+    margin-bottom: 50px;
+    padding-top: 20px;
+    padding: 0px;
+}
+
+.dire{
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+.dire > button{
+    border: none;
+    border-bottom: 1px solid rgb(187, 187, 187);
+    background-color: white;
+    text-align: start;
+    padding-bottom: 5px;
+    padding: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: gray;
+    transition: 1s;
+}
+
+.dire > button:last-child{
+    border: none;
+}
+
+.dire > button:hover{
+    color: black;
+}
+
+.footr > p{
+    margin-bottom: 0;
+    margin-top: 15px;
+    color: white;
+    background-color: black;
+    padding-left: 4.9vw;
 }
 
 /*end of footer*/
